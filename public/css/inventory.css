@@ -1,0 +1,14 @@
+#item-list {
+  width: 30vw;
+  margin: 2rem auto;
+  list-style-type: none;
+}
+
+.item-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-checkbox {
+  margin-right: .5rem;
+}

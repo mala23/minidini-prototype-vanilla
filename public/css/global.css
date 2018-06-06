@@ -1,0 +1,18 @@
+html {
+  color: rgba(51, 51, 51, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+input {
+  border: solid 5px rgba(242, 208, 145, 1);
+  border-radius: 4px;
+  width: 30rem;
+  height: 2.5rem;
+  display: inline-block;
+}
+
+input:placeholder {
+  color: rgba(214, 214, 214, 1);
+  font-size: 1.6rem;
+  font-weight: bold;
+}

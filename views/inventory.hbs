@@ -1,0 +1,13 @@
+<link href="../css/inventory.css" rel="stylesheet">
+<main>
+<input id="items-search" type="text" placeholder="What item are you looking for?">
+<ul id="items-list">
+  {{#if items}}
+    {{#each items}}
+       <li>
+         <p>{{{ this.text }}}</p>
+       </li>
+     {{/each}} 
+  {{/if}}
+</ul>
+</main>
