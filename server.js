@@ -4,6 +4,7 @@ var assert = require('assert')
 var bodyParser = require('body-parser')
 var expressHbs = require('express-handlebars')
 var app = express()
+var dummyData = require('./dummyData')
 var Item = require('./models/item')
 
 var index = require('./views/inventory')
