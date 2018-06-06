@@ -58,8 +58,18 @@ select {
   color: inherit;
 }
 
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
 select:required:invalid {
   color: rgba(214, 214, 214, 1);
+}
+
+button:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
 
 option[value=""][disabled] {
