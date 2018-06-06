@@ -16,14 +16,26 @@
   display: grid;
   grid-template-columns: 10rem 10rem 10rem 10rem;
   grid-gap: 1.5rem;
-  width: 55vw;
+  width: 44.5rem;
   margin: 0 auto;
 }
 
+#item-add {
+  border: 5px solid rgba(214, 214, 214, 1);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+  background-image: url('https://s3.eu-central-1.amazonaws.com/minidini/images/icons/icon_plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .item {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   padding: 1rem;
-  width: 8rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
   background-color: rgba(232, 176, 73, 1);
   border-radius: 4px;
   text-align: center;
