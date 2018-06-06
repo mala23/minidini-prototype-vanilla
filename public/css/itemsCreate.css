@@ -1,0 +1,179 @@
+.formular {
+  display: inline-block;
+  font-family: 'VAGRounded';
+  color: #333;
+  font-size: 14px;
+  margin-left: 5rem;
+  max-width: 70rem;
+}
+
+form.formular ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+form.formular ul li {
+  margin-bottom: 40px;
+  margin-right: 35px;
+  float: left;
+}
+
+input#item-name {
+  width: 30rem;
+}
+
+textarea#item-description {
+  width: 30rem;
+}
+
+#iconrect {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  background-color: #fcb23b;
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+.splitscreen {
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  margin: 190px 0 0 47px;
+  top: 0;
+}
+
+.vl {
+    position: absolute;
+    border-left: 5px solid #fcb23b;
+    border-radius: 4px;
+    height: 100%;
+    left: 980px;
+    top: 188px;
+    z-index: -1;
+}
+
+.basepie {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: conic-gradient(#333 33.33%, #D6D6D6 0, #D6D6D6 66.66%, #fcb23b 0);
+  z-index: -1;
+  margin-left: 35px;
+  margin-top: 62px;
+}
+
+.toppie {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.totalline {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.totalvalue {
+  display: inline-block;
+}
+
+#total {
+  display: inline-block;
+  margin-right: 2px;
+}
+
+#chf {
+  display: inline-block;
+  color: #FDD89D;
+  margin-right: 2px;
+}
+
+.splitbuttons {
+  margin-top: 63px;
+}
+
+#equal {
+  width: 100px;
+  height: 60px;
+  font-size: 30px;
+  border-width: 5px;
+  border-color: #fcb23b;
+  border-radius: 4px;
+  margin-right: 11px;
+}
+
+#percent {
+  width: 100px;
+  height: 60px;
+  font-size: 25px;
+  border-width: 5px;
+  border-color: #fcb23b;
+  border-radius: 4px;
+  padding-top: 8px;
+  margin-right: 11px;
+}
+
+#amount {
+  width: 100px;
+  height: 60px;
+  font-size: 20px;
+  border-width: 5px;
+  border-color: #fcb23b;
+  border-radius: 4px;
+  padding-top: 8px;
+  margin-right: 11px;
+}
+
+.users {
+  display: inline-block;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #FDD89D;
+  border-radius: 4px;
+  width: 320px;
+  height: 177px;
+  margin-top: 40px;
+}
+
+#usernumber {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  margin-right: 17px;
+}
+
+#username {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  margin-right: 15px;
+}
+
+#userchf {
+  display: inline-block;
+  font-size: 20px;
+  color: #fcb23b;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.userdelete {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+ul.users {
+  list-style-type: none;
+}
+
+ul.users li {
+  margin-bottom: 40px;
+  padding-top: 4px;
+}

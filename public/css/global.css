@@ -7,14 +7,70 @@ html {
   color: rgba(51, 51, 51, 1);
   background-color: rgba(255, 255, 255, 1);
   font-family: 'VAGRounded', Fallback, sans-serif;
+  letter-spacing: 0.01rem;
+}
+
+main {
+  margin-top: 5rem;
 }
 
 input {
   border: solid 5px rgba(242, 208, 145, 1);
   border-radius: 4px;
   width: 20rem;
-  height: 2.5rem;
+  height: 3rem;
   display: inline-block;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0 1rem;
+}
+
+textarea {
+  border: solid 5px rgba(242, 208, 145, 1);
+  border-radius: 4px;
+  width: 20rem;
+  height: 9rem;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 100%;
+  resize: none;
+  padding: 1rem;
+}
+
+select {
+  border: solid 5px rgba(242, 208, 145, 1);
+  border-radius: 4px;
+  width: 20rem;
+  height: 3rem;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 120%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  -webkit-box-sizing:content-box; 
+  box-sizing:content-box;
+  padding: 0 1rem;
+}
+
+select:required:invalid {
+  color: rgba(214, 214, 214, 1);
+}
+
+option[value=""][disabled] {
+  display: none;
+}
+
+option {
+  color: rgba(51, 51, 51, 1);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  letter-spacing: 0.05rem;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */

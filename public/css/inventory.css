@@ -6,7 +6,6 @@
 
 #items-search__input {
   width: 30rem;
-  padding: 0 1rem;
   background-image: url("https://s3.eu-central-1.amazonaws.com/minidini/images/icons/icon_search.svg");
   background-repeat: no-repeat;
   background-position: 98% 50%;
