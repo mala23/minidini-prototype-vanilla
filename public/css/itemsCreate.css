@@ -1,30 +1,38 @@
-.items-form {
-  display: inline-block;
-  font-family: 'VAGRounded';
-  color: #333;
-  font-size: 14px;
+#items-wrapper {
   margin-left: 5rem;
-  max-width: 70rem;
+  display: flex;
+  flex-direction: column;
+  width: 40.5rem;
 }
 
-form.items-form ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+#items-form {
+  display: flex;
+  flex-direction: column;
 }
 
-form.items-form ul li {
-  margin-bottom: 40px;
-  margin-right: 35px;
-  float: left;
+.items-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.items-form-column {
+  display: inline-block;
+  width: auto;
+  margin-right: 3rem;
+}
+
+#items-buttons {
+  display: block;
+  align-self: flex-end;
+  margin-top: 4rem;
 }
 
 input#name {
-  width: 30rem;
+  width: 20rem;
 }
 
 textarea#description {
-  width: 30rem;
+  width: 20rem;
 }
 
 #iconrect {
@@ -186,6 +194,7 @@ ul.users li {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
+  font-family: inherit;
   font-size: 1.2rem;
   color: white;
   line-height: 3.5rem;
@@ -203,6 +212,7 @@ ul.users li {
   text-align: center;
   vertical-align: middle;
   text-decoration: none;
+  font-family: inherit;
   font-size: 1.2rem;
   color: white;
   line-height: 3.5rem;

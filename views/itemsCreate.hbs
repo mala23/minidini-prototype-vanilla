@@ -1,34 +1,44 @@
 <link href="../css/itemsCreate.css" rel="stylesheet">
 
-<main>
+<main id="items-wrapper">
   <div id="iconrect"></div>
-  <form action="/items/create" method="post">
-    <fieldset>
-      <label for="name">Item Name</label><br>
-      <input id="name" type="text" name="name" value=""></input>
-    </fieldset>
-    <fieldset>
-      <label for="date">Date of Purchase</label><br>
-      <input id="date" type="text" name="date" placeholder="DD.MM.YYYY" value=""></input>
-    </fieldset>
-      <label for="description">Item Description</label><br>
-      <textarea id="description" type="text" name="description" value=""></textarea>
-    <fieldset>
-      <label for="value">Purchase Value</label><br>
-      <input id="value" type="text" name="value" placeholder="00.00 CHF" value=""></input>
-    </fieldset>
-    <fieldset>
-      <label for="category">Select Category</label><br>
-      <select id="category" required="true" name="category" value="">
-        <option value="" disabled selected>Please select a category...</option>
-        <option value="Furniture">Furniture</option>
-        <option value="Decoration">Decoration</option>
-        <option value="Home Appliance">Home Appliance</option>
-        <option value="Entertainment Device">Entertainment Device</option>
-        <option value="Garden">Garden</option>
-      </select>
-    </fieldset>
-    <a href="/" class="button-cancel">Cancel</a>
-    <button class="button-gold" id="itemAdd" type="submit">Add Item</button>
+  <form id="items-form" action="/items/create" method="post">
+    <section class="items-flex">
+    <section class="items-form-column">
+      <fieldset>
+        <label for="name">Item Name</label><br>
+        <input id="name" type="text" name="name" value=""></input>
+      </fieldset>
+      <fieldset>
+        <label for="description">Item Description</label><br>
+        <textarea id="description" type="text" name="description" value=""></textarea>
+      </fieldset>
+    </section>
+    <section class="items-form-column">
+      <fieldset>
+        <label for="date">Date of Purchase</label><br>
+        <input id="date" type="text" name="date" placeholder="DD.MM.YYYY" value=""></input>
+      </fieldset>
+      <fieldset>
+        <label for="value">Purchase Value</label><br>
+        <input id="value" type="text" name="value" placeholder="00.00 CHF" value=""></input>
+      </fieldset>
+      <fieldset>
+        <label for="category">Select Category</label><br>
+        <select id="category" required="true" name="category" value="">
+          <option value="" disabled selected>Select a category...</option>
+          <option value="Furniture">Furniture</option>
+          <option value="Decoration">Decoration</option>
+          <option value="Home Appliance">Home Appliance</option>
+          <option value="Entertainment Device">Entertainment Device</option>
+          <option value="Garden">Garden</option>
+        </select>
+      </fieldset>
+    </section>
+    </section>
+    <section id="items-buttons">
+      <a href="/" class="button-cancel">Cancel</a>
+      <button class="button-gold" id="itemAdd" type="submit">Add Item</button>
+    </section>
   </form>
 </main>
