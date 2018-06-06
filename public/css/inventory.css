@@ -1,14 +1,43 @@
-#item-list {
-  width: 30vw;
-  margin: 2rem auto;
-  list-style-type: none;
+.items-search {
+  display: block;
+  margin: 5rem auto;
+  text-align: center;
 }
 
-.item-section {
-  display: flex;
-  flex-direction: row;
+#items-search__input {
+  width: 30rem;
+  padding: 0 1rem;
+  background-image: url("https://s3.eu-central-1.amazonaws.com/minidini/images/icons/icon_search.svg");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  background-size: 1.6rem;
 }
 
-.item-checkbox {
-  margin-right: .5rem;
+#items-list {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-gap: 1.5rem;
+  width: 55vw;
+  margin: 0 auto;
+}
+
+.item {
+  padding: 1rem;
+  width: 8rem;
+  height: 8rem;
+  background-color: rgba(232, 176, 73, 1);
+  border-radius: 4px;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+.item-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 1rem auto .5rem auto;
+}
+
+.item-name {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
 }
