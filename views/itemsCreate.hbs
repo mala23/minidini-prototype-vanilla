@@ -1,37 +1,37 @@
 <link href="../css/itemsCreate.css" rel="stylesheet">
 
 <main>
-  <form class="formular" action="navbar.html" method="post">
+  <form class="items-form" action="/items/create" method="post">
     <div id="iconrect"></div>
     <ul class="inputblocks">
     <li>
     <div>
       <label for="item-name">Item Name</label><br>
-      <input name="item-name" id="item-name" type="text" autofocus="ture" placeholder="Item Name"></input>
+      <input name="itemName" id="item-name" type="text" autofocus="true" placeholder="Item Name" value=""></input>
     </div>
     </li>
     <li>
     <div>
       <label for="item-date">Date of Purchase</label><br>
-      <input name="item-date" id="item-date" type="text" placeholder="DD.MM.YYYY"></input>
+      <input name="item-date" id="item-date" type="text" placeholder="DD.MM.YYYY" value=""></input>
     </div>
     </li>
     <li>
     <div>
       <label for="item-description">Item Description</label><br>
-      <textarea name="item-description" id="item-description" type="text"></textarea>
+      <textarea name="item-description" id="item-description" type="text" value=""></textarea>
     </div>
     </li>
     <li>
     <div>
       <label for="item-value">Purchase Value</label><br>
-      <input name="item-value" id="item-value" type="text" placeholder="00.00 CHF"></input>
+      <input name="item-value" id="item-value" type="text" placeholder="00.00 CHF" value=""></input>
     </div>
     </li>
     <li>
     <div>
     <label for="item-category">Select Category</label><br>
-      <select id="item-category" name="item-category" required="true">
+      <select id="item-category" name="item-category" required="true" value="">
         <option value="" disabled selected>Please select a category...</option>
         <option value="Furniture">Furniture</option>
         <option value="Decoration">Decoration</option>
@@ -42,5 +42,9 @@
     </div>
     </li>
     </ul>
+    <section class="buttons">
+      <a href="/" class="button-cancel">Cancel</a>
+      <button class="button-gold" name="button-submit" type="submit" formaction="/items/create" method="post">Add Item</button>
+    </section>
   </form>
 </main>

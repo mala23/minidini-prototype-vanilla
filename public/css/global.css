@@ -21,8 +21,9 @@ input {
   height: 3rem;
   display: inline-block;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 120%;
   padding: 0 1rem;
+  color: inherit;
 }
 
 textarea {
@@ -32,9 +33,10 @@ textarea {
   height: 9rem;
   display: inline-block;
   font-family: inherit;
-  font-size: 100%;
+  font-size: 120%;
   resize: none;
   padding: 1rem;
+  color: inherit;
 }
 
 select {
@@ -53,6 +55,7 @@ select {
   -webkit-box-sizing:content-box; 
   box-sizing:content-box;
   padding: 0 1rem;
+  color: inherit;
 }
 
 select:required:invalid {
