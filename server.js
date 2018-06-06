@@ -43,10 +43,25 @@ function dummyData() {
 
 app.get('/', function(req, res) {
   Item.find({}, function(err, items) {
-    console.log(items)
-    res.render('inventory', { title: 'MiniDini – Inventory', items: items})
+    res.render('inventory', { title: 'MiniDini – Inventory', items: items })
     if (err) throw err
   })
+})
+
+app.get('/inventory', function(req, res) {
+  res.redirect('/')
+})
+
+app.get('/items/create', function(req, res) {
+  res.render('itemsCreate', { title: 'MiniDini – Add a new item' })
+})
+
+app.get('/household', function(req, res) {
+  res.render('household', { title: 'MiniDini – Household' })
+})
+
+app.get('/overview', function(req, res) {
+  res.render('overview', { title: 'MiniDini – Overview' })
 })
 
 app.post('/items/create', function(req, res) {
