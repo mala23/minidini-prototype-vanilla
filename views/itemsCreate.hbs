@@ -1,37 +1,25 @@
 <link href="../css/itemsCreate.css" rel="stylesheet">
 
 <main>
-  <form class="items-form" action="/items/create" method="post">
-    <div id="iconrect"></div>
-    <ul class="inputblocks">
-    <li>
-    <div>
-      <label for="item-name">Item Name</label><br>
-      <input name="itemName" id="item-name" type="text" autofocus="true" placeholder="Item Name" value=""></input>
-    </div>
-    </li>
-    <li>
-    <div>
-      <label for="item-date">Date of Purchase</label><br>
-      <input name="item-date" id="item-date" type="text" placeholder="DD.MM.YYYY" value=""></input>
-    </div>
-    </li>
-    <li>
-    <div>
-      <label for="item-description">Item Description</label><br>
-      <textarea name="item-description" id="item-description" type="text" value=""></textarea>
-    </div>
-    </li>
-    <li>
-    <div>
-      <label for="item-value">Purchase Value</label><br>
-      <input name="item-value" id="item-value" type="text" placeholder="00.00 CHF" value=""></input>
-    </div>
-    </li>
-    <li>
-    <div>
-    <label for="item-category">Select Category</label><br>
-      <select id="item-category" name="item-category" required="true" value="">
+  <div id="iconrect"></div>
+  <form action="/items/create" method="post">
+    <fieldset>
+      <label for="name">Item Name</label><br>
+      <input id="name" type="text" name="name" value=""></input>
+    </fieldset>
+    <fieldset>
+      <label for="date">Date of Purchase</label><br>
+      <input id="date" type="text" name="date" placeholder="DD.MM.YYYY" value=""></input>
+    </fieldset>
+      <label for="description">Item Description</label><br>
+      <textarea id="description" type="text" name="description" value=""></textarea>
+    <fieldset>
+      <label for="value">Purchase Value</label><br>
+      <input id="value" type="text" name="value" placeholder="00.00 CHF" value=""></input>
+    </fieldset>
+    <fieldset>
+      <label for="category">Select Category</label><br>
+      <select id="category" required="true" name="category" value="">
         <option value="" disabled selected>Please select a category...</option>
         <option value="Furniture">Furniture</option>
         <option value="Decoration">Decoration</option>
@@ -39,12 +27,8 @@
         <option value="Entertainment Device">Entertainment Device</option>
         <option value="Garden">Garden</option>
       </select>
-    </div>
-    </li>
-    </ul>
-    <section class="buttons">
-      <a href="/" class="button-cancel">Cancel</a>
-      <button class="button-gold" name="button-submit" type="submit" formaction="/items/create" method="post">Add Item</button>
-    </section>
+    </fieldset>
+    <a href="/" class="button-cancel">Cancel</a>
+    <button class="button-gold" id="itemAdd" type="submit">Add Item</button>
   </form>
 </main>

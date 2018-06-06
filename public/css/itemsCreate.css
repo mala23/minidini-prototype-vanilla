@@ -19,11 +19,11 @@ form.items-form ul li {
   float: left;
 }
 
-input#item-name {
+input#name {
   width: 30rem;
 }
 
-textarea#item-description {
+textarea#description {
   width: 30rem;
 }
 

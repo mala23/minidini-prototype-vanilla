@@ -25,6 +25,7 @@ app.use(bodyParser.json())
 
 app.get('/', function(req, res) {
   Item.find({}, function(err, items) {
+    console.log(items)
     res.render('inventory', { title: 'MiniDini – Inventory', items: items })
     if (err) throw err
   })
@@ -47,9 +48,8 @@ app.get('/overview', function(req, res) {
 })
 
 app.post('/items/create', function(req, res) {
-  item = new Item
-  item.name = req.body.itemName
-  item.save(function(err) {})
+  let data = req.body || {}
+  Item.create(data)
 
   res.redirect('/')
 })
