@@ -43,3 +43,66 @@ input {
   font-weight: bold;
   letter-spacing: 0.1px;
 }
+
+nav{
+  background-color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 10rem;
+}
+nav ul{
+  padding: 0;
+  margin-top: 74px;
+}
+nav ul li{
+  display: inline-flex;
+  margin-right: 42px;
+  letter-spacing: .05rem;
+}
+nav a{
+  display: inline-flex;
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  display: inline-flex;
+  width: 290px;
+  height: 60px;
+  margin: 50px 143px 0 60px;
+}
+
+.household-icon {
+  width: 32px;
+  height: 34px;
+  margin: 62px 0px 0 0px;
+}
+
+.notifications {
+  width: 30px;
+  height: 33px;
+  margin: 62px 0 0 18px;
+}
+
+.account {
+  width: 34px;
+  height: 32px;
+  margin: 64px 0 0 28px;
+}
+
+.household-name{
+  display: inline-flex;
+  margin: 74px 141px 0 10px;
+}
+
+.household-inhabitants {
+  font-size: 14px;
+  transform: translate(40%, -150%);
+  color: rgba(255, 255, 255, 1);
+}
+
+.household {
+  position: relative;
+}
