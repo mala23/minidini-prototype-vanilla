@@ -32,7 +32,7 @@ app.get('/', function(req, res) {
 
 app.post('/items/create', function(req, res) {
   item = new Item
-  item.text = req.body.itemText
+  item.name = req.body.itemName
   item.save(function(err) {})
 
   res.redirect('/')

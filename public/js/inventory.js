@@ -1,9 +1,9 @@
-var itemText = document.getElementById('itemText')
+var itemName = document.getElementById('itemName')
 var itemAdd = document.getElementById('item-add')
 
 function createItem() {
-    var itemTextValue = itemText.value
-    console.log(itemTextValue)
+    var itemNameValue = itemName.value
+    console.log(itemNameValue)
     var list = document.getElementById('item-list')
     var itemSection = document.createElement('section')
     var itemLi = document.createElement('li')
@@ -14,11 +14,11 @@ function createItem() {
     list.appendChild(itemSection)
     itemSection.appendChild(itemCheckbox)
     itemSection.appendChild(itemLi)
-    itemLi.appendChild(document.createTextNode(itemTextValue))
-    itemText.value=''
+    itemLi.appendChild(document.createTextNode(itemNameValue))
+    itemName.value=''
 }
 
-itemText.addEventListener('keyup', function(event){
+itemName.addEventListener('keyup', function(event){
     event.preventDefault()
     if(event.keyCode === 13) {
           createItem()
