@@ -2,7 +2,7 @@
   margin-left: 5rem;
   display: flex;
   flex-direction: column;
-  width: 40.5rem;
+  width: 48.5rem;
 }
 
 #items-form {
@@ -28,11 +28,11 @@
 }
 
 input#name {
-  width: 20rem;
+  width: 25rem;
 }
 
 textarea#description {
-  width: 20rem;
+  width: 25rem;
 }
 
 #iconrect {

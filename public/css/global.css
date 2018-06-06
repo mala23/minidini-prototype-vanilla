@@ -22,7 +22,7 @@ fieldset {
 input {
   border: solid 5px rgba(242, 208, 145, 1);
   border-radius: 4px;
-  width: 12rem;
+  width: 15rem;
   height: 3rem;
   display: inline-block;
   font-family: inherit;
@@ -34,7 +34,7 @@ input {
 textarea {
   border: solid 5px rgba(242, 208, 145, 1);
   border-radius: 4px;
-  width: 20rem;
+  width: 15rem;
   height: 9rem;
   display: inline-block;
   font-family: inherit;
@@ -47,7 +47,7 @@ textarea {
 select {
   border: solid 5px rgba(242, 208, 145, 1);
   border-radius: 4px;
-  width: 12rem;
+  width: 15rem;
   height: 3rem;
   display: inline-block;
   font-family: inherit;
