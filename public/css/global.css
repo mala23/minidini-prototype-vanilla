@@ -175,3 +175,12 @@ nav a{
 .household {
   position: relative;
 }
+
+.background-illus {
+  width: 100vw;
+  height: 100vw;
+  margin-top: 5rem;
+  background-image: url(https://s3.eu-central-1.amazonaws.com/minidini/images/icons/bg-inventory.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
+}
