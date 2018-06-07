@@ -118,6 +118,31 @@ label {
   letter-spacing: 0.1px;
 }
 
+.item-impairment-label {
+  cursor: pointer;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + label span {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 1rem 0 0;
+  clear: none;
+  background-image: url(https://s3.eu-central-1.amazonaws.com/minidini/images/icons/checkbox__inactive.svg);
+  background-position: left center;
+  background-repeat: no-repeat; 
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + label span {
+  background-image: url(https://s3.eu-central-1.amazonaws.com/minidini/images/icons/checkbox__active.svg);
+}
+
 nav{
   background-color: rgba(255, 255, 255, 1);
   font-size: 20px;

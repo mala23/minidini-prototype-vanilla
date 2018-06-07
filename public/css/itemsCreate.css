@@ -195,18 +195,12 @@ ul.users li {
 }
 
 #item-attachment-label {
-  vertical-align: middle;
   align-self: center;
   margin: 0 0 0 1rem;
 }
 
 .item-impairment {
-  width: 30px;
-  height: 30px;
-  border-color: #FDD89D;
-  border-style: solid;
-  border-radius: 4px;
-  border-width: 5px;
+  display: flex;
 }
 
 .button-cancel {
